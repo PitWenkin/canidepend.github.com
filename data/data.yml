@@ -114,6 +114,12 @@ groups:
     description: OpenSSH
     programs:
       openssh: {}
+  fail2ban:
+    short: fail2ban
+    description: Daemon to ban hosts that cause multiple authentication errors
+    programs:
+      fail2ban: {}
+
 
 distros:
   debian:
@@ -212,6 +218,8 @@ distros:
         openssh:
           - openssh
           - openssh-server
+      fail2ban:
+        fail2ban: fail2ban
 
   ubuntu:
     description: Ubuntu
@@ -332,6 +340,8 @@ distros:
         rust: rust
       openssh:
         openssh: openssh
+      fail2ban:
+        fail2ban: fail2ban
 
   sles:
     styleClass: "suse"
@@ -456,3 +466,5 @@ distros:
         rust: rust
       openssh:
         openssh: openssh
+      fail2ban:
+        fail2ban: fail2ban
